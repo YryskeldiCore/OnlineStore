@@ -1,0 +1,54 @@
+.slider {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.right {
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.slide-active {
+    display: block;
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+}
+
+.slide-non-active {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-inner {
+    width: 85%;
+    height: 100%;
+}

@@ -1,0 +1,18 @@
+.tab-bar-item {
+    height: 0;
+    overflow: hidden;
+}
+.tab-bar-item.active {
+    height: auto;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+    }
+}
